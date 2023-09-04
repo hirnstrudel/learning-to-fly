@@ -42,7 +42,7 @@ impl Layer {
     pub fn propagate(&self, inputs: &[f32]) -> Vec<f32> {
         self.neurons
             .iter()
-            .map(|neuron| neuron.propagate(&inputs))
+            .map(|neuron| neuron.propagate(inputs))
             .collect()
     }
 
